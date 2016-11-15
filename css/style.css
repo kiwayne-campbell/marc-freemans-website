@@ -1,0 +1,139 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+nav {
+  height:70px;
+  background-color: #525C65;
+  border-bottom: 2px solid #EE6363;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+}
+
+
+ul li {
+  padding-right: 20px;
+  display: inline;
+  line-height: 65px;
+  font-size: 20px;
+  font-family: 'Boogaloo', cursive;
+}
+
+a, u {
+    text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+a.contact {
+    text-decoration: underline;
+    color: blue;
+}
+
+a:hover {
+    color: #EE6363;
+    font-size: 30px;
+}
+
+.freemanImageStudio {
+  position: relative;
+  min-height: 100%;
+  background-image: url('../images/marcfFreemanniceStylisedStudio.JPG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -150px;
+  opacity: 0.80;
+}
+
+
+
+.freemanImageStudio2 {
+  position: relative;
+  min-height: 500px;
+  background-image: url('../images/MarcFreeman3000.JPG');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.80;
+}
+
+.freemanImageStudio3 {
+  position: relative;
+  min-height: 500px;
+  background-image: url('../images/marcFreemanDannyBrown.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+.freemanImageStudio4 {
+  position: relative;
+  min-height: 100%;
+  background-image: url('../images/Type2marc.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+
+.freemanImageStudio5 {
+  position: relative;
+  min-height: 100%;
+  background-image: url('../images/Type2console2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.75;
+}
+
+.freemanBio, .freemanBio2, .freemanBio3  {
+  height: auto;
+  background-color: #525C65;
+  color: white;
+  text-align: center;
+  padding: 15px 80px;
+  font-family: 'Boogaloo', cursive;
+  border-top: 2px solid #EE6363;
+  border-bottom: 2px solid #EE6363;
+  font-size: 20px;
+}
+
+.freemanBio4 {
+  height: auto;
+  background-color: #525C65;
+  color: white;
+  text-align: center;
+  padding: 15px 80px;
+  font-family: 'Boogaloo', cursive;
+  border-top: 2px solid #EE6363;
+  border-bottom: 2px solid #EE6363;
+  font-size: 20px;
+}
+
+.containerOne {
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 18px;
+  left:500px;
+  top: 30%;
+  width: 300px;
+  height: 100px;
+  font-family: 'Boogaloo', cursive;
+}
+
+.logo {
+position: absolute;
+top: 1%;
+height: 60px;
+}
