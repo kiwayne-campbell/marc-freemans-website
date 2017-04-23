@@ -18,7 +18,7 @@ function showDivs(n) {
 
 function rotateSlides() {
     setInterval(function(){ 
-    plusDivs(1); }, 5000);
+    plusDivs(1); }, 4000);
 }
 
 rotateSlides();
