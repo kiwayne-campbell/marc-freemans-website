@@ -189,13 +189,25 @@ height: 60px;
     background-position: -400px 65px;
     }
 
-    .freemanBio{
+    /*.freemanBio{
       height: 100px;
+    }*/
+
+     /*.freemanBio:active {
+      height: auto;
     }
 
-    .freemanBio > p {
+    .freemanBio:active > p {
+      display: block;
+    }*/
+
+    /*.freemanBio > p {
       display: none;
-    }
+    }*/
+
+    /*.freemanBio > p:active {
+      height: auto;
+    }*/
 
     p.sectionTitle{
       display: block;
@@ -217,23 +229,27 @@ height: 60px;
       left: 0.5px;
     }
 
-    .marcMicrophoneImage {
+    /*.marcMicrophoneImage {
       display: none;
-    }
+    }*/
 
     .logo {
       left: 80px;
     }
 
+    /*#marcMicrophoneImage {
+      transform: rotate(90deg);
+    }*/
+
 
 /*
  * Just a quick hamburger
  */
-.marcMicrophoneImage
+/*.marcMenu span
 {
   display: block;
   width: 60px;
-  height: 50px;
+  height: 10px;
   margin-bottom: 10px;
   position: relative;
   
@@ -257,7 +273,7 @@ height: 60px;
 .marcMenu span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
-}
+}*/
 
 
 /*hide nav elements at top left of screen*/
@@ -267,7 +283,7 @@ height: 60px;
 }*/
 
 /*hide items to left*/
-#marcMenuItems
+/*#marcMenuItems
 {
   position: absolute;
   width: 324px;
@@ -280,14 +296,13 @@ height: 60px;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
   
-  transform-origin: 0% 0%;
+  /*transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  z-index: -1;
-}
+}*/
 
-#marcMenuItems li
+/*#marcMenuItems li
 {
   padding: 10px 0;
   font-size: 22px;
@@ -295,8 +310,47 @@ height: 60px;
   display: block;
   text-align: center;
 
-}
+}*/
 
 
+	.marcMicrophoneImage {
+
+		display:inline-block;
+
+	}
+
+	nav ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: black;
+		border: 5px solid #444;
+		right: 30px;
+		top: 60px;
+		width: 70%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+  /*nav:visited ul {
+    display: none;
+  }*/
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+    display: block;
+
+	}
+
+  nav:hover ul {
+
+		display: block;
+
+	}
 
 } 
