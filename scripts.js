@@ -22,3 +22,16 @@ function rotateSlides() {
 }
 
 rotateSlides();
+
+
+function transitionMenuBurger() {
+  console.log('click');
+  document.getElementById('marcMicrophoneImage').style.transform = "rotate(90deg)";
+  document.getElementById('marcMicrophoneImage').style.marginTop = "20px;";
+  document.getElementById('marcMenuItems').style.transform = "scale(1.0, 1.0)";
+  // console.log(elem);
+//   for (var i=0;i<elem.length;i+=1){
+//   elem[i].style.transform = "scale(1.0, 1.0);"
+// }
+  
+}

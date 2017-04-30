@@ -5,12 +5,16 @@
     <title>marc-freemans-website</title>
     <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <meta name="viewport" content="width=device-width, initial-scale=1;">
   </head>
   <body>
-    <nav>
-      <img src="images/906-editv3.png" height="50px" alt="" />
+    <nav class='marcMenu' onclick="transitionMenuBurger();">
+      <img src="images/906-editv3.png" id='marcMicrophoneImage'height="50px" alt="" />
+        <!--<span></span>
+        <span></span>
+        <span></span>-->
       <img class ="logo" src="images/MFreeman-Front-v2.1.png" alt="" />
-      <ul>
+      <ul id='marcMenuItems'>
         <li><a href="#freemanPart1">About me</a></li>
         <li><a href="#freemanPart2">Clients</a></li>
         <li><a href="#freemanPart3">Reviews</a></li>
@@ -18,6 +22,7 @@
         <li><a href="#freemanPart5">Contact</a></li>
       </ul>
     </nav>
+
     <div class="freemanImageStudio">
     </div>
     
