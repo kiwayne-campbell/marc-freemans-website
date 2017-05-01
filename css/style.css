@@ -1,3 +1,4 @@
+
 body, html {
   height: 100%;
   margin: 0;
@@ -139,7 +140,7 @@ p.contactBlurb {
   background-color: black;
   color: white;
   padding: 18px;
-  left:500px;
+  left:450px;
   top: 30%;
   width: 500px;
   height: 300px;
@@ -150,10 +151,6 @@ p.contactBlurb {
   text-align: center;
 }
 
-.containerOne > a:hover {
-  color: #EE6363;
-  font-size: 40px;
-}
 
 p.contactTitle {
   font-size: 50px;
@@ -184,33 +181,22 @@ height: 60px;
 
 @media screen and (max-width : 375px) {
 
+  nav {
+    position: fixed!important;
+  }
+
   .freemanImageStudio{ 
-    /*background-size: 85%;*/
-    background-position: -400px 65px;
+    min-height: 60%;
+    background-position: -400px 0px;
     }
-
-    /*.freemanBio{
-      height: 100px;
-    }*/
-
-     /*.freemanBio:active {
-      height: auto;
-    }
-
-    .freemanBio:active > p {
-      display: block;
-    }*/
-
-    /*.freemanBio > p {
-      display: none;
-    }*/
-
-    /*.freemanBio > p:active {
-      height: auto;
-    }*/
 
     p.sectionTitle{
       display: block;
+    }
+
+    p.contactBlurb {
+    margin-bottom: 30px;
+  
     }
 
     /*hide your images to keep the mobil site load free*/
@@ -229,97 +215,22 @@ height: 60px;
       left: 0.5px;
     }
 
-    /*.marcMicrophoneImage {
-      display: none;
-    }*/
-
     .logo {
-      left: 80px;
+      left: 95px;
     }
 
-    /*#marcMicrophoneImage {
-      transform: rotate(90deg);
-    }*/
+	#marcMicrophoneImage {
+    width: 95px;
+  }
 
+  .containerOne > a:hover {
+    color: #EE6363;
+    font-size: 20px;
+  }
 
-/*
- * Just a quick hamburger
- */
-/*.marcMenu span
-{
-  display: block;
-  width: 60px;
-  height: 10px;
-  margin-bottom: 10px;
-  position: relative;
-  
-  background: white;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
+  /*i couldn't get this to work - menu would not disappear after clicking! would liek to figure out at a later date*/
 
-.marcMenu span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-.marcMenu span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}*/
-
-
-/*hide nav elements at top left of screen*/
-
-/*nav {
-  width:36.1%;
-}*/
-
-/*hide items to left*/
-/*#marcMenuItems
-{
-  position: absolute;
-  width: 324px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: black;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  /*transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}*/
-
-/*#marcMenuItems li
-{
-  padding: 10px 0;
-  font-size: 22px;
-  list-style-type: circle;
-  display: block;
-  text-align: center;
-
-}*/
-
-
-	.marcMicrophoneImage {
-
-		display:inline-block;
-
-	}
-
-	nav ul { 
+	/*nav ul { 
 
 		display: none;
 		position: absolute;
@@ -332,10 +243,6 @@ height: 60px;
 		border-radius: 4px 0 4px 4px;
 
 	}
-
-  /*nav:visited ul {
-    display: none;
-  }*/
 
 	nav li {
 
@@ -351,6 +258,91 @@ height: 60px;
 
 		display: block;
 
-	}
+	}*/
+
+
+  /*  thanks to: http://koen.kivits.com/articles/pure-css-menu/ for putting me out of my misery! A lot surplus to my needs though! */
+
+   /* The necessities */
+.onclick-menu {
+	position: relative;
+	display: inline-block;
+}
+
+.onclick-menu:focus {
+	pointer-events: none;
+}
+
+.onclick-menu:focus .onclick-menu-content {
+	opacity: 1;
+	visibility: visible;
+}
+
+.onclick-menu-content {
+	pointer-events: auto;
+	position: absolute;
+	z-index: 1;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0.5s;
+	-moz-transition: visibility 0.5s;
+	-webkit-transition: visibility 0.5s;
+	-o-transition: visibility 0.5s;
+}
+
+.onclick-menu.no-pointer-events {
+	pointer-events: auto !important;
+}
+
+.onclick-menu.no-visibility .onclick-menu-content {
+	visibility: visible !important;
+	display: none;
+}
+
+.onclick-menu.no-visibility:focus .onclick-menu-content {
+	display: block;
+}
+
+.onclick-menu.no-opacity .onclick-menu-content {
+	opacity: 1 !important;
+}
+
+/*
+Eye candy 
+( colors courtesy of https://kuler.adobe.com/try-color-theme-3350110 )
+*/
+
+.onclick-menu-content {
+	background-color: black;
+	width: 60%;
+
+	margin-top: 19px;
+	margin-left: 0;
+	padding: 10px;
+}
+
+/* arrow for the expanding part */
+.onclick-menu-content:before {
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-bottom: 10px solid black;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	position: absolute;
+	top: -10px;
+}
+
+.onclick-menu-content li {
+	color: #f2f5e9;
+	display: block;
+	/*white-space: nowrap;*/
+}
+
+
+/*mobile styles end*/
 
 } 
