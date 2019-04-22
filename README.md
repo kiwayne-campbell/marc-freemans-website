@@ -24,3 +24,5 @@ The hardest thing I have noted are a few things when it comes to front-end desig
 The next thing to work on is deisnging a good menu bar for mobile, as the main thing- you have to wait until your client gives the go ahead.
 
 That will be the next thing I update is the development for mobile screens & how the site looks for that.
+
+test
